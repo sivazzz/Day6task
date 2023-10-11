@@ -1,0 +1,16 @@
+class Person {
+    constructor(name, age, gender, occupation, address) {
+        this.name = name;
+        this.age = age;
+        this.gender = gender;
+        this.occupation = occupation;
+        this.address = address;
+    }
+
+    Details() {
+        return `Name: ${this.name}, Age: ${this.age}, Gender: ${this.gender}, Occupation: ${this.occupation}, Address: ${this.address};`
+    }
+}
+
+let person = new Person("Sivaram", 23, "Male", "Service Engineer", "54 vinayagar street, Thoothukudi, tamilnadu");
+console.log(person.Details())
