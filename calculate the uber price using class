@@ -1,0 +1,18 @@
+
+class Uber {
+    constructor(distance, time) {
+        this.distance = distance;
+        this.time = time;
+    }
+
+    TravelPrice() {
+        let basePrice = 1.5;
+        let distancePrice = this.distance * 2;
+        let timePrice = this.time * 1;
+        let totalPrice = basePrice + distancePrice + timePrice;
+        return totalPrice.toFixed(2);
+    }
+}
+
+let uber = new Uber(5, 10);
+console.log(uber.TravelPrice());
